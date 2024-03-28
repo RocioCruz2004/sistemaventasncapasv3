@@ -35,14 +35,19 @@ namespace SistemasVentas.VISTA.PersonaVista
 
         private void button1_Click(object sender, EventArgs e)
         {
-            p.Nombre= textBox1.Text;
-            p.Apellido= textBox2.Text;
-            p.Telefono= textBox3.Text;
-            p.Ci= textBox4.Text;
-            p.Correo= textBox5.Text;
+            p.Nombre = textBox1.Text;
+            p.Apellido = textBox2.Text;
+            p.Telefono = textBox3.Text;
+            p.Ci = textBox4.Text;
+            p.Correo = textBox5.Text;
 
             bss.EditarPersonaBss(p);
             MessageBox.Show("Datos actualizados");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

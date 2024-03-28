@@ -28,12 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerenteListarVista));
-            panel2 = new Panel();
-            dataGridView1 = new DataGridView();
-            button17 = new Button();
-            button16 = new Button();
-            button15 = new Button();
+            label2 = new Label();
             panel3 = new Panel();
             button14 = new Button();
             button13 = new Button();
@@ -49,77 +44,27 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label2 = new Label();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            button15 = new Button();
+            button16 = new Button();
+            dataGridView1 = new DataGridView();
+            panel2 = new Panel();
+            button17 = new Button();
             panel3.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
-            // panel2
+            // label2
             // 
-            panel2.BackColor = Color.FromArgb(192, 255, 255);
-            panel2.Controls.Add(dataGridView1);
-            panel2.Controls.Add(button17);
-            panel2.Controls.Add(button16);
-            panel2.Controls.Add(button15);
-            panel2.Controls.Add(panel3);
-            panel2.Location = new Point(-1, 59);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(803, 469);
-            panel2.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(153, 13);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(636, 401);
-            dataGridView1.TabIndex = 20;
-            // 
-            // button17
-            // 
-            button17.BackColor = SystemColors.MenuHighlight;
-            button17.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button17.ForeColor = SystemColors.ControlLightLight;
-            button17.Location = new Point(584, 420);
-            button17.Name = "button17";
-            button17.Size = new Size(149, 34);
-            button17.TabIndex = 19;
-            button17.Text = "ELIMINAR";
-            button17.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            button16.BackColor = SystemColors.MenuHighlight;
-            button16.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button16.ForeColor = SystemColors.ControlLightLight;
-            button16.Location = new Point(402, 420);
-            button16.Name = "button16";
-            button16.Size = new Size(149, 34);
-            button16.TabIndex = 18;
-            button16.Text = "EDITAR";
-            button16.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            button15.BackColor = SystemColors.MenuHighlight;
-            button15.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button15.ForeColor = SystemColors.ControlLightLight;
-            button15.Location = new Point(214, 420);
-            button15.Name = "button15";
-            button15.Size = new Size(149, 34);
-            button15.TabIndex = 17;
-            button15.Text = "AGREGAR";
-            button15.UseVisualStyleBackColor = false;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Lemon Friday", 24F, FontStyle.Bold);
+            label2.ForeColor = Color.FromArgb(0, 64, 64);
+            label2.Location = new Point(176, 8);
+            label2.Name = "label2";
+            label2.Size = new Size(442, 48);
+            label2.TabIndex = 12;
+            label2.Text = "SUPERMERCADO \"AHISITO\"";
             // 
             // panel3
             // 
@@ -138,7 +83,7 @@
             panel3.Controls.Add(button3);
             panel3.Controls.Add(button2);
             panel3.Controls.Add(button1);
-            panel3.Location = new Point(3, 3);
+            panel3.Location = new Point(3, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(144, 466);
             panel3.TabIndex = 13;
@@ -311,37 +256,66 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // panel1
+            // button15
             // 
-            panel1.BackColor = Color.Teal;
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label2);
-            panel1.Location = new Point(-1, 1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(803, 65);
-            panel1.TabIndex = 2;
+            button15.BackColor = SystemColors.MenuHighlight;
+            button15.Font = new Font("Segoe UI", 11.25F);
+            button15.ForeColor = SystemColors.ControlLightLight;
+            button15.Location = new Point(214, 420);
+            button15.Name = "button15";
+            button15.Size = new Size(149, 34);
+            button15.TabIndex = 17;
+            button15.Text = "NUEVA VENTA";
+            button15.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // button16
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(710, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(63, 41);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 13;
-            pictureBox1.TabStop = false;
+            button16.BackColor = SystemColors.MenuHighlight;
+            button16.Font = new Font("Segoe UI", 11.25F);
+            button16.ForeColor = SystemColors.ControlLightLight;
+            button16.Location = new Point(402, 420);
+            button16.Name = "button16";
+            button16.Size = new Size(149, 34);
+            button16.TabIndex = 18;
+            button16.Text = "EDITAR VENTA";
+            button16.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // dataGridView1
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Teal;
-            label2.Font = new Font("Segoe UI Black", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(14, 8);
-            label2.Name = "label2";
-            label2.Size = new Size(349, 45);
-            label2.TabIndex = 12;
-            label2.Text = "SISTEMA DE VENTAS";
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(153, 13);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(636, 401);
+            dataGridView1.TabIndex = 20;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(192, 255, 255);
+            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(button17);
+            panel2.Controls.Add(button16);
+            panel2.Controls.Add(button15);
+            panel2.Controls.Add(panel3);
+            panel2.Location = new Point(-1, 59);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(803, 469);
+            panel2.TabIndex = 3;
+            // 
+            // button17
+            // 
+            button17.BackColor = SystemColors.MenuHighlight;
+            button17.Font = new Font("Segoe UI", 11.25F);
+            button17.ForeColor = SystemColors.ControlLightLight;
+            button17.Location = new Point(584, 420);
+            button17.Name = "button17";
+            button17.Size = new Size(149, 34);
+            button17.TabIndex = 19;
+            button17.Text = "ELIMINAR";
+            button17.UseVisualStyleBackColor = false;
             // 
             // GerenteListarVista
             // 
@@ -349,24 +323,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 525);
             Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(label2);
             Name = "GerenteListarVista";
             Text = "GerenteListarVista";
             Load += GerenteListarVista_Load;
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel3.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Panel panel2;
-        private Panel panel1;
-        private PictureBox pictureBox1;
         private Label label2;
         private Panel panel3;
         private Button button14;
@@ -383,9 +351,10 @@
         private Button button3;
         private Button button2;
         private Button button1;
-        private Button button17;
-        private Button button16;
         private Button button15;
+        private Button button16;
         private DataGridView dataGridView1;
+        private Panel panel2;
+        private Button button17;
     }
 }
