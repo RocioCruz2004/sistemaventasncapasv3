@@ -1,1 +1,0 @@
-# sistemaventasncapasv3
